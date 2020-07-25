@@ -48,8 +48,8 @@ es:
         main-menu-hover-font-color: "Fuente del menú principal al mantener el cursor"
         main-menu-border-color: "Borde del menú principal"
       custom_colors: "Colores personalizados"
-      customize: "Personalice su versión de OpenProject con su propio logotipo. Tenga en cuenta que este logotipo estará visible al público."
-      enterprise_notice: "Para agradecerle su contribución económica al desarrollo de OpenProject, esta insignificante función solo está disponible para los suscriptores que apoyan la versión corporativa."
+      customize: "Personalice su versión de ceoclick con su propio logotipo. Tenga en cuenta que este logotipo estará visible al público."
+      enterprise_notice: "Para agradecerle su contribución económica al desarrollo de ceoclick, esta insignificante función solo está disponible para los suscriptores que apoyan la versión corporativa."
       manage_colors: "Editar opciones de selección de colores"
       instructions:
         alternative-color: "Color de énfasis intenso, que suele usarse para el botón más importante de una pantalla."
@@ -95,7 +95,7 @@ es:
   ldap_auth_sources:
     technical_warning_html: |
       Este formulario LDAP requiere conocimientos técnicos de su configuración de LDAP / activiar directorio <br/>
-      <a href="https://www.openproject.org/help/administration/manage-ldap-authentication/"> Visite nuestra documentación para obtener instrucciones detalladas.
+      <a href="https://www.ceoclick.org/help/administration/manage-ldap-authentication/"> Visite nuestra documentación para obtener instrucciones detalladas.
     attribute_texts:
       name: Nombre arbitrario de la conexión LDAP
       host: Nombre del anfitrion LDAP o dirección IP
@@ -105,7 +105,7 @@ es:
       system_user_dn_html: |
         Ingrese el DN del usuario del sistema utilizado para acceso de solo lectura.
         <br/>
-        Ejemplo: uid=openproject,ou=system,dc=example,dc=com
+        Ejemplo: uid=ceoclick,ou=system,dc=example,dc=com
       system_user_password: Ingrese la contraseña de enlace del usuario del sistema
       base_dn: |
         Ingrese el DN base del subárbol en LDAP que desea que el proyecto abierto busque para usuarios y grupos.
@@ -113,16 +113,16 @@ es:
         Ejemplo ou=users,dc=example,dc=com
       filter_string: |
         Permite añadir un filtro RFC4515 opcional para aplicar los resultados mostrados de los usuarios filtrados en LDAP.
-        Esta opción se puede usar para restringir el conjunto de usuarios mostrados por OpenProject para la sincronización de grupos y autenticación.
+        Esta opción se puede usar para restringir el conjunto de usuarios mostrados por ceoclick para la sincronización de grupos y autenticación.
       filter_string_concat: |
-        OpenProject siempre filtrará el atributo de inicio de sesión proporcionado por el usuario para identificar el registro. Si especifica un filtro aquí,
+        ceoclick siempre filtrará el atributo de inicio de sesión proporcionado por el usuario para identificar el registro. Si especifica un filtro aquí,
         se concatenará con un operador AND. De forma predeterminada, se usará un valor de comodín (objectClass=*) como filtro.
       onthefly_register: |
         Si marca esta casilla, el proyecto abierto creará automáticamente nuevos usuarios a partir de sus entradas LDAP cuando se autentican por primera vez con el proyecto abierto.
         ¡Deje esto sin marcar para permitir que solo las cuentas existentes en el proyecto abierto se autentiquen a través de LDAP!
       onthefly_group_sync: |
         Si habilita la sincronización de grupos para esta conexión LDAP, también se crearán automáticamente usuarios
-        en OpenProject para los grupos sincronizados. Sin esta opción, solo se añadirán a los grupos aquellas cuentas que existan en OpenProject.
+        en ceoclick para los grupos sincronizados. Sin esta opción, solo se añadirán a los grupos aquellas cuentas que existan en ceoclick.
     connection_encryption: 'Cifrado de conexión'
     system_account: 'Cuenta del sistema'
     system_account_legend: |
@@ -1074,7 +1074,7 @@ es:
   error_can_not_unarchive_project: "Este proyecto no se puede recuperar: %{errors}"
   error_check_user_and_role: "Por favor elige un usuario y un rol."
   error_code: "Error %{code}"
-  error_cookie_missing: 'No se encuentra la cookie de OpenProject. Por favor asegúrese de que las cookies están habilitadas, ya que sin ellas esta aplicación no funcionará correctamente.'
+  error_cookie_missing: 'No se encuentra la cookie de ceoclick. Por favor asegúrese de que las cookies están habilitadas, ya que sin ellas esta aplicación no funcionará correctamente.'
   error_custom_option_not_found: "Esta opción no existe."
   error_enterprise_activation_user_limit: "Su cuenta no puede ser activada (se alcanzó el límite del usuario). Por favor, contacte su administrador para obtener acceso."
   error_enterprise_token_invalid_domain: "La versión Enterprise Edition no está activa. Su dominio del token de Enterprise (%{actual}) no coincide con el nombre de host del sistema (%{expected})."
@@ -1091,7 +1091,7 @@ es:
   error_work_package_done_ratios_not_updated: "Ejecución de paquete de trabajos no actualizado."
   error_work_package_not_found_in_project: "El paquete de trabajo no se ha encontrado o no pertenece a este proyecto"
   error_must_be_project_member: "debe ser miembro del proyecto"
-  error_migrations_are_pending: "Su instalación de OpenProject tiene migraciones de bases de datos pendientes. Es probable que haya pasado por alto la ejecución de las migraciones en la última actualización. Consulte la guía de actualización para actualizar correctamente su instalación."
+  error_migrations_are_pending: "Su instalación de ceoclick tiene migraciones de bases de datos pendientes. Es probable que haya pasado por alto la ejecución de las migraciones en la última actualización. Consulte la guía de actualización para actualizar correctamente su instalación."
   error_migrations_visit_upgrade_guides: "Visite la documentación de la Guía de actualización"
   error_no_default_work_package_status: "Ningún estado del paquete trabajo predeterminado está definido. Por favor, compruebe su configuración (ir a \"Administración-> Situación del paquete de trabajo\")."
   error_no_type_in_project: "Ningún tipo se asocia a este proyecto. Por favor, Compruebe la configuración del proyecto."
@@ -1162,7 +1162,7 @@ es:
       no_visible_projects: "No hay ningún proyecto visible en esta instancia."
       users: "Usuarios registrados mas recientes en esta instancia."
     blocks:
-      community: "Comunidad de OpenProject"
+      community: "Comunidad de ceoclick"
       upsale:
         title: "Actualizar hasta versión corporativa"
         more_info: "Más información"
@@ -1173,7 +1173,7 @@ es:
       faq: "Preguntas Frecuentes"
       glossary: "Glosario"
       shortcuts: "Accesos directos"
-      blog: "Blog de OpenProject"
+      blog: "Blog de ceoclick"
       forums: "Foro de la comunidad"
       newsletter: "Alertas de seguridad / boletín"
   journals:
@@ -1496,7 +1496,7 @@ es:
   label_open_menu: "Abrir menú"
   label_open_work_packages: "abierto"
   label_open_work_packages_plural: "abierto"
-  label_openproject_website: "Sitio web de OpenProject"
+  label_openproject_website: "Sitio web de CeoClick Project"
   label_optional_description: "Descripción"
   label_options: "Opciones"
   label_other: "Otros"
@@ -1762,15 +1762,15 @@ es:
   mail_body_account_information: "Información de su cuenta"
   mail_body_account_information_external: "Puede usar su %{value} cuenta para ingresar."
   mail_body_lost_password: "Para cambiar su contraseña, haga clic en el siguiente enlace:"
-  mail_body_register: "Welcome to OpenProject. Please activate your account by clicking on this link:"
+  mail_body_register: "Welcome to ceoclick. Please activate your account by clicking on this link:"
   mail_body_register_header_title: "Project member invitation email"
   mail_body_register_user: "Dear %{name}, "
   mail_body_register_links_html: |
     Please feel free to browse our youtube channel (%{youtube_link}) where we provide a webinar (%{webinar_link})
-    and “Get started” videos (%{get_started_link}) to make your first steps in OpenProject as easy as possible.
+    and “Get started” videos (%{get_started_link}) to make your first steps in ceoclick as easy as possible.
     <br />
     If you have any further questions, consult our documentation (%{documentation_link}) or contact us (%{contact_us_link}).
-  mail_body_register_closing: "Your OpenProject team"
+  mail_body_register_closing: "Your ceoclick team"
   mail_body_register_ending: "Stay connected! Kind regards,"
   mail_body_reminder: "%{count} paquete(s) de trabajo que le fueron asignados vencen en los próximos %{days}:"
   mail_body_group_reminder: "%{count} paquete(s) de trabajo asignado(s) al grupo “%{group}” vencerán en los próximos %{days} días:"
@@ -1793,7 +1793,7 @@ es:
       a: "Mejore su plan de pago ([here](upgrade_url))" #here turned into a link
       b: "Bloquear o eliminar un usuario existente ([here](users_url))" #here turned into a link
   more_actions: "Más funciones"
-  noscript_description: "Necesita activar JavaScript para poder usar OpenProject!"
+  noscript_description: "Necesita activar JavaScript para poder usar ceoclick!"
   noscript_heading: "JavaScript desactivado"
   noscript_learn_more: "Saber más"
   notice_accessibility_mode: El modo de accesibilidad puede ser habilitado a través de tu cuenta [settings](url).
@@ -1857,7 +1857,7 @@ es:
   notice_wont_delete_auth_source: El modo de autenticación no puede ser borrado mientras haya usuarios utilizándolo.
   notice_project_cannot_update_custom_fields: "No se pueden actualizar campos personalizados disponibles del proyecto. El proyecto es inválido: %{errors}"
   notice_attachment_migration_wiki_page: >
-    Esta página se generó automáticamente al actualizar OpenProject. Contiene todos los datos adjuntos que estaban asociados anteriormente al %{container_type} "%{container_name}".
+    Esta página se generó automáticamente al actualizar ceoclick. Contiene todos los datos adjuntos que estaban asociados anteriormente al %{container_type} "%{container_name}".
   #Default format for numbers
   number:
     format:
@@ -1880,9 +1880,9 @@ es:
           tb: "TB"
   onboarding:
     heading_getting_started: "Obtener información general"
-    text_getting_started_description: "Obtenga información general rápida sobre la administración de proyectos y la colaboración en equipo con OpenProject."
+    text_getting_started_description: "Obtenga información general rápida sobre la administración de proyectos y la colaboración en equipo con ceoclick."
     text_show_again: "Puede reiniciar este vídeo en el menú ayuda"
-    welcome: "Bienvenido a OpenProject"
+    welcome: "Bienvenido a ceoclick"
     select_language: "Seleccione su idioma"
   permission_add_work_package_notes: "Añadir notas"
   permission_add_work_packages: "Añadir paquetes de trabajo"
@@ -1938,7 +1938,7 @@ es:
   permission_select_project_modules: "Seleccionar módulos de proyecto"
   permission_manage_types: "Seleccionar Tipos"
   permission_view_calendar: "Ver calendario"
-  permission_view_changesets: "Ver las revisiones del repositorio en OpenProject"
+  permission_view_changesets: "Ver las revisiones del repositorio en ceoclick"
   permission_view_commit_author_statistics: "Ver estadísticas del commit del autor"
   permission_view_work_package_watchers: "Ver lista de observadores"
   permission_view_work_packages: "Ver paquetes de trabajo"
@@ -2021,7 +2021,7 @@ es:
     destroy:
       confirmation: "Si continúa, se borarrá definitivamente el repositorio gestionado."
       info: "La eliminación del repositorio no se puede deshacer."
-      info_not_managed: "Nota: Esto NO borrará el contenido de este repositorio, ya que no es gestionado por OpenProject."
+      info_not_managed: "Nota: Esto NO borrará el contenido de este repositorio, ya que no es gestionado por ceoclick."
       managed_path_note: "Se borrará el directorio siguiente: %{path}"
       repository_verification: "Intruduzca el identificador del proyecto %{identifier} para confirmar la eliminación de su repositorio."
       subtitle: "¿Esta seguro de que desea eliminar el tipo %{repository_type} del proyecto %{project_name}?"
@@ -2035,8 +2035,8 @@ es:
       empty_repository: "El repositorio existe, pero está vacío. No contiene revisiones aún."
       exists_on_filesystem: "El directorio del repositorio ya existe en el sistema de ficheros."
       filesystem_access_failed: "Se produjo un error al acceder al repositorio en el sistema de ficheros: %{message}"
-      not_manageable: "Este proveedor de repositorios no puede ser gestionado por OpenProject."
-      path_permission_failed: "Error al intentar crear la siguiente ruta: %{path}. Por favor asegúrese de que OpenProject puede escribir en esa carpeta."
+      not_manageable: "Este proveedor de repositorios no puede ser gestionado por ceoclick."
+      path_permission_failed: "Error al intentar crear la siguiente ruta: %{path}. Por favor asegúrese de que ceoclick puede escribir en esa carpeta."
       unauthorized: "Usted no está autorizado a acceder al repositorio o las credenciales no son válidas."
       unavailable: "El repositorio no está disponible."
       exception_title: "No se puede acceder al repositorio: %{message}"
@@ -2053,9 +2053,9 @@ es:
         path_encoding: "Reemplazar Git vía codificación (por defecto: UTF-8)"
       local_title: "Enlace de repositorio Git local existente"
       local_url: "URL local"
-      local_introduction: "Si tienes un repositorio Git local existente, puede enlazarlo con OpenProject para acceder a él desde dentro de la aplicación."
-      managed_introduction: "Permitir que OpenProject cree e integre un repositorio Git local automáticamente."
-      managed_title: "Repositorios Git integrados en OpenProject"
+      local_introduction: "Si tienes un repositorio Git local existente, puede enlazarlo con ceoclick para acceder a él desde dentro de la aplicación."
+      managed_introduction: "Permitir que ceoclick cree e integre un repositorio Git local automáticamente."
+      managed_title: "Repositorios Git integrados en ceoclick"
       managed_url: "URL Administrada"
       path: "Ruta de acceso al repositorio Git"
       path_encoding: "Ruta de codificación"
@@ -2072,19 +2072,19 @@ es:
     scm_types:
       local: "Enlazar repositorio local existente"
       existing: "Enlazar repositorio existente"
-      managed: "Crear un nuevo repositorio en OpenProject"
+      managed: "Crear un nuevo repositorio en ceoclick"
     storage:
       not_available: "Consumo de almacenamiento de disco no está disponible para este repositorio."
       update_timeout: "Mantener la última información de espacio de disco requerida para un repositorio de N minutos. Contar el espacio de disco requerido de un repositorio puede ser costoso, aumente este valor para reducir el impacto en el rendimiento."
     subversion:
       existing_title: "Subversion existentes de repositorio"
-      existing_introduction: "Si tienes una Subversion de repositorio existente, puede enlazarlo con OpenProject para acceder a él desde dentro de la aplicación."
+      existing_introduction: "Si tienes una Subversion de repositorio existente, puede enlazarlo con ceoclick para acceder a él desde dentro de la aplicación."
       existing_url: "URL existente"
       instructions:
         managed_url: "Esta es la URL de las Subversion de repositorio administradas (local)."
         url: "Introduzca la URL del repositorio. Esta puede apuntar ya sea un repositorio local (a partir de %{local_proto}), o un repositorio remoto. \nLos siguientes esquemas URL son compatibles:"
-      managed_title: "Subversiones de repositorio integradas en OpenProject"
-      managed_introduction: "Permitir que OpenProject cree e integre una Subversion de repositorio local automáticamente."
+      managed_title: "Subversiones de repositorio integradas en ceoclick"
+      managed_introduction: "Permitir que ceoclick cree e integre una Subversion de repositorio local automáticamente."
       managed_url: "URL Administrada"
       password: "Contraseña del repositorio"
       username: "Nombre de usuario del repositorio"
@@ -2232,7 +2232,7 @@ es:
       sentence_connector: "y"
       skip_last_comma: "falso"
   text_accessibility_hint: "El modo de accesibilidad está diseñado para los usuarios ciegos, con dificultades motoras o con la vista mala. Para estos últimos, los elementos enfocados se destacan aún más. Tenga en cuenta que el módulo Backlog no está disponible en este modo."
-  text_access_token_hint: "Los tokens de acceso te permiten dar permisos de acceso sobre los recursos de OpenProject a aplicaciones externas."
+  text_access_token_hint: "Los tokens de acceso te permiten dar permisos de acceso sobre los recursos de ceoclick a aplicaciones externas."
   text_analyze: "Análisis futuro: %{subject}"
   text_are_you_sure: "¿Estás seguro?"
   text_are_you_sure_with_children: "¿Eliminar el paquete de trabajo y todos sus paquetes dependientes?"
@@ -2300,7 +2300,7 @@ es:
   text_no_notes: "No hay comentarios disponibles para este paquete de trabajo."
   text_notice_too_many_values_are_inperformant: "Nota: Si se muestran más de 100 elementos por página puede incrementar el tiempo de carga de la página."
   text_notice_security_badge_displayed_html: >
-    Nota: al activarse, se mostrará una insignia con el estado de instalación en el <a href="%{information_panel_path}">%{information_panel_label}</a> panel de administración, y en la página principal. Solamente será visible para administradores. <br/> La insignia comprobará tu versión actual de OpenProject comparada con la base de datos oficial de OpenProject para alertarte de cualquier actualización o vulnerabilidad. Para más información sobre las funciones de la comprobación, los datos necesarios para conseguir actualizaciones disponibles, o para desactivar esta comprobación, por favor visita <a href="%{more_info_url}">la documentación de configuración</a>.
+    Nota: al activarse, se mostrará una insignia con el estado de instalación en el <a href="%{information_panel_path}">%{information_panel_label}</a> panel de administración, y en la página principal. Solamente será visible para administradores. <br/> La insignia comprobará tu versión actual de ceoclick comparada con la base de datos oficial de ceoclick para alertarte de cualquier actualización o vulnerabilidad. Para más información sobre las funciones de la comprobación, los datos necesarios para conseguir actualizaciones disponibles, o para desactivar esta comprobación, por favor visita <a href="%{more_info_url}">la documentación de configuración</a>.
   text_own_membership_delete_confirmation: "Estás a punto de eliminar algunos o todos tus permisos, y podrías no poder volver a editar este proyecto.\n¿Estás seguro/a de que quieres continuar?"
   text_plugin_assets_writable: "Directorio de Plugins activos escribible"
   text_powered_by: "Con tecnología de %{link}"
@@ -2308,7 +2308,7 @@ es:
   text_reassign: "Reasignar al paquete de trabajo:"
   text_regexp_info: "eg. ^[A-Z0-9]+$"
   text_regexp_multiline: 'La expresión regular se aplica en modo multilínea. Por ejemplo, ^---\s+'
-  text_repository_usernames_mapping: "Seleccione o actualize el usuario de OpenProject asignado a cada nombre en el registro del repositorio. Los usuarios con el mismo nombre o email serán mapeados automáticamente."
+  text_repository_usernames_mapping: "Seleccione o actualize el usuario de ceoclick asignado a cada nombre en el registro del repositorio. Los usuarios con el mismo nombre o email serán mapeados automáticamente."
   text_select_mail_notifications: "Seleccione las acciones que serán notificadas por correo."
   text_status_changed_by_changeset: "Aplicado en el conjunto de cambios %{value}."
   text_table_difference_description: "En esta tabla, se muestran %{entries} individuales. Puede ver la diferencia entre dos entradas cualesquiera seleccionando primero los cuadros de verificación adecuados en la tabla. Al hacer clic en el botón bajo la tabla, se muestran las diferencias."
@@ -2514,7 +2514,7 @@ es:
     activate_and_reset_failed_logins: "Activar y restablecer los inicios de sesión fallidos"
     authentication_provider: "Proveedor de autenticación"
     authentication_settings_disabled_due_to_external_authentication: >
-      Este usuario se autentica mediante un proveedor de autenticación externa, así que no hay ninguna contraseña en OpenProject para ser cambiada.
+      Este usuario se autentica mediante un proveedor de autenticación externa, así que no hay ninguna contraseña en ceoclick para ser cambiada.
     authorization_rejected: "No tienes permitido iniciar sesion."
     assign_random_password: "Asignar contraseña aleatoria (Enviar al usuario vía email)"
     blocked: "bloqueado temporalmente"
@@ -2555,7 +2555,7 @@ es:
   warning_user_limit_reached: >
     Alcanzado el límite de usuarios. No se puede activar ningún usuario más. <a href="%{upgrade_url}">actualice su plan</a> o bloquee miembros para permitir usuarios adicionales.
   warning_user_limit_reached_instructions: >
-    Has alcanzado el límite de usuarios (%{current}/%{max} usuarios activos). Por favor, contacta con sales@openproject.com para mejorar tu plan a la edición Enterprise y añadir usuarios adicionales.
+    Has alcanzado el límite de usuarios (%{current}/%{max} usuarios activos). Por favor, contacta con sales@ceoclick.com para mejorar tu plan a la edición Enterprise y añadir usuarios adicionales.
   0: >
 
   warning_bar:
@@ -2672,18 +2672,18 @@ es:
         confidential: "Comprueba que la aplicación puede ser usada en donde el secreto de cliente puede seguir siendo confidencial. Las aplicaciones nativas del móvil y las Aplicaciones de Páginas Particulares se consideran No Confidenciales."
         scopes: "Marque los ámbitos a los que desea que la aplicación otorgue acceso. Si no se verifica el alcance, api_v3 se supone."
         client_credential_user_id: "ID de usuario opcional para representar a clientes que usan esta aplicación. No necesita rellenarse si permites un acceso público"
-        register_intro: "Si estás desarrollando una aplicación de cliente API de OAuth para OpenProject, puedes registrarla usando este formulario para todos los usuarios."
+        register_intro: "Si estás desarrollando una aplicación de cliente API de OAuth para ceoclick, puedes registrarla usando este formulario para todos los usuarios."
         default_scopes: ""
     client_id: "ID de cliente"
     client_secret_notice: >
-      Esta es la única vez que podremos imprimirte el secreto de cliente, por favor apúntalo y mantenlo en un lugar seguro. Debe tratarse como una contraseña y no puede ser recuperado de OpenProject más adelante.
+      Esta es la única vez que podremos imprimirte el secreto de cliente, por favor apúntalo y mantenlo en un lugar seguro. Debe tratarse como una contraseña y no puede ser recuperado de ceoclick más adelante.
     authorization_dialog:
       authorize: "Autorizar"
       cancel: "Cancelar y rechazar autorización."
       prompt_html: "¿Quieres autorizar a <strong>%{application_name}</strong> para usar tu cuenta <em>%{login}</em>?"
       title: "Autorizar %{application_name}"
       wants_to_access_html: >
-        Esta aplicación solicita acceso a tu cuenta OpenProject. <br/><strong>Se han solicitado los siguientes permisos:</strong>
+        Esta aplicación solicita acceso a tu cuenta ceoclick. <br/><strong>Se han solicitado los siguientes permisos:</strong>
     scopes:
       api_v3: "Acceso API v3 completo"
       api_v3_text: "La aplicación recibirá acceso completo de lectura y escritura al Proyecto Abierto API v3 \npara realizar acciones en su nombre."
@@ -2702,7 +2702,7 @@ es:
     client_credentials_impersonation_set_to: "Usuario de credenciales de Cliente establecido como"
     client_credentials_impersonation_warning: "Nota: los Clientes usando el flujo 'credenciales de Cliente' de esta aplicación tendrá los derechos de este usuario"
     client_credentials_impersonation_html: >
-      Por defecto, OpenProject proporciona autorización a OAuth 2.0 a través de %{authorization_code_flow_link}. Puedes activar %{client_credentials_flow_link} de manera óptima, aunque necesitas aportar un usuario en cuya representación se harán las peticiones.
+      Por defecto, ceoclick proporciona autorización a OAuth 2.0 a través de %{authorization_code_flow_link}. Puedes activar %{client_credentials_flow_link} de manera óptima, aunque necesitas aportar un usuario en cuya representación se harán las peticiones.
     authorization_error: "Se ha generado un error de autorización."
     revoke_my_application_confirmation: "¿Seguro que quieres eliminar esta aplicación? Eso suspenderá %{token_count} activos para realizarse."
     my_registered_applications: "Aplicaciones OAuth Registradas"
